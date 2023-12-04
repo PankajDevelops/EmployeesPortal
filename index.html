@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Reg</title>
+    <link rel="stylesheet" href="/Projects/EmployeeApp/css/index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.2/sweetalert.min.js" integrity="sha512-AA1Bzp5Q0K1KanKKmvN/4d3IRKVlv9PYgwFPvm32nPO6QS8yH1HO7LbgB1pgiOxPtfeg5zEn2ba64MUcqJx6CA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+<body>
+
+    <div class="header">
+        <h5>Employee's Portal</h5>
+    </div>
+
+    <div class="upper-btn-box">
+        <div class="left-box">
+            <button id="add-btn"><i class="fa fa-plus"></i>&nbsp;Add Employee
+            </button>
+            <button id="del-all-btn" style="background-color: #0a7ea8;"><i class="fa fa-eraser"></i> &nbsp;Clear All Data
+            </button>
+            <input type="checkbox" id="del-all-box">
+        </div>
+        <div class="right-box">
+            <i class="fa fa-search"></i>
+            <input type="text" id="empId" placeholder ="Enter Employee id">
+            <button style="background-color: rgb(32, 110, 228);">Search</button>
+        </div>
+    </div>
+
+    <div class="table-box">
+        <table>
+            <tr>
+                <th>Sr No</th>
+                <th>Profile</th>
+                <th>Id</th>
+                <th>Name</th>
+                <th>Last Name</th>
+                <th>Email</th>
+                <th>Office Code</th>
+                <th>Job Title</th>
+                <th>Action</th>
+            </tr>
+
+            <tbody  id="table-data"></tbody>
+
+            
+        </table>
+    </div>
+
+    <div class="modal">
+        <i class="fa fa-times-circle close-icon"></i>
+        <div class="left-modal">
+        <div class="img-box">
+            <img src="/Projects/EmployeeApp/images/avatar.png" width="150px" height="150px" alt="" id="profile-pic">
+            <i class="fa fa-plus"></i>
+            <input type="file" id="upload-field">
+        </div></div>
+
+        <div class="right-modal">
+            <form id="register-form">
+                <div class="input-box">
+                    <label for="id">Id</label>
+                    <input type="text" required id="id">
+                </div>
+    
+                <div class="input-box">
+                    <label for="id">Name</label>
+                    <input type="text" required id="name">
+                </div>
+                <div class="input-box">
+                    <label for="id">Last Name</label>
+                    <input type="text" required id="l-name">
+                </div>
+                <div class="input-box">
+                    <label for="id">Email</label>
+                    <input type="text" required id="email">
+                </div>
+                <div class="input-box">
+                    <label for="id">Office Code</label>
+                    <input type="text" required id="office-code">
+                </div>
+                <div class="input-box">
+                    <label for="id">Job Title</label>
+                    <input type="text" required id="j-title">
+                </div>
+    
+                <div class="input-box">
+                    <button id="register-btn">Register</button>
+                    <button id="update-btn" disabled="disabled" style="background-color: rgb(233, 64, 34);">Update</button>
+                </div>
+            </form>
+            
+        </div>
+    </div>
+
+    <script src="js/index.js"></script>
+    
+</body>
+</html>
