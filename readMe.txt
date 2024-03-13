@@ -1,4 +1,5 @@
 project by -PankajDevlops
+(College Mini-Project)
 
 General Understanding:
 Purpose: This code manages a form for registering employees, storing their details locally, displaying them in a table, and allowing updates or deletions.
